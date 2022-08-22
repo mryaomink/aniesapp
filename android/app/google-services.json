@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "30330903530",
+    "project_id": "anies-dpw",
+    "storage_bucket": "anies-dpw.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:30330903530:android:8722614982c0b3a9fc3093",
+        "android_client_info": {
+          "package_name": "com.example.mdc_anies"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "30330903530-u5i332a5kdnl4bvldmtj5gvop7p4qufa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAp1ov9dLwgslA-0PF3UaHjSXWAqxhL5UU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "30330903530-u5i332a5kdnl4bvldmtj5gvop7p4qufa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -121,7 +121,7 @@ class YaoBjm extends StatelessWidget {
                 height: 312,
                 decoration: BoxDecoration(
                   image: DecorationImage(
-                      image: NetworkImage(imgUrl), fit: BoxFit.cover),
+                      image: AssetImage(imgUrl), fit: BoxFit.cover),
                 ),
               ),
               const SizedBox(

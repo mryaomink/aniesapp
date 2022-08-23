@@ -7,7 +7,15 @@ import 'controller/google_sheet.dart';
 void main() async {
   await GoogleSheet.init();
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp();
+  await Firebase.initializeApp(
+    options: FirebaseOptions(
+      apiKey: "AIzaSyDOFVsSG61u_DjgM6SFk6Ux4NMpfv9d8ew",
+      appId: "1:30330903530:web:6ac521389147e98bfc3093",
+      messagingSenderId: "30330903530",
+      projectId: "anies-dpw",
+      storageBucket: "anies-dpw.appspot.com",
+    ),
+  );
   runApp(const MyApp());
 }
 
@@ -18,12 +26,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Media Center Anies Baswedan',
-      theme: ThemeData(
-        brightness: Brightness.light,
-      ),
-      home: const YaoNav(),
-    );
+        debugShowCheckedModeBanner: false,
+        title: 'Media Center Anies Baswedan',
+        theme: ThemeData(
+          brightness: Brightness.light,
+        ),
+        home: const YaoNav());
   }
 }

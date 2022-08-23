@@ -18,7 +18,7 @@
 
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="A new Flutter project.">
+  <meta name="description" content="DPW Aliansi Nasional Indonesia Sejahtera Kalimantan Selatan">
 
   <!-- iOS meta tags & icons -->
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -26,10 +26,15 @@
   <meta name="apple-mobile-web-app-title" content="mdc_anies">
   <link rel="apple-touch-icon" href="icons/Icon-192.png">
 
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png">
+  
+
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="favicon.png"/>
 
-  <title>mdc_anies</title>
+  <title>DPW Anies Kalsel</title>
   <link rel="manifest" href="manifest.json">
 
   <script>
@@ -54,5 +59,30 @@
       });
     });
   </script>
+  <script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.3/firebase-app.js";
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.3/firebase-storage.js";
+  
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.9.3/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyDOFVsSG61u_DjgM6SFk6Ux4NMpfv9d8ew",
+    authDomain: "anies-dpw.firebaseapp.com",
+    projectId: "anies-dpw",
+    storageBucket: "anies-dpw.appspot.com",
+    messagingSenderId: "30330903530",
+    appId: "1:30330903530:web:6ac521389147e98bfc3093",
+    measurementId: "G-V6738M2T4T"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
 </body>
 </html>

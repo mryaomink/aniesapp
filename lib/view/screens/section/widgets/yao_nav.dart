@@ -12,7 +12,10 @@ class YaoNav extends StatefulWidget {
 class _YaoNavState extends State<YaoNav> {
   int _selectedIndex = 0;
 
-  List<Widget> pages = const [YaoHome(), YaoInput()];
+  List<Widget> pages = const [
+    YaoHome(),
+    YaoInput(),
+  ];
 
   void _changePage(int index) {
     setState(() {

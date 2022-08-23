@@ -14,35 +14,30 @@ class _YaoAllState extends State<YaoAll> {
         category: "Politik",
         judul: "The A - Z Of Politics",
         time: "jam 08.00am",
-        imgUrl:
-            "https://images.unsplash.com/photo-1554418651-70309daf95f5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"),
+        imgUrl: "assets/images/anies1.jpg"),
     YaoTerkini(
         category: "Hiburan",
         judul:
             "The Schola adalah orkestra kamar dari musisi paling terkenal di London.",
         time: "jam 07.00pm",
-        imgUrl:
-            "https://images.unsplash.com/photo-1567593810070-7a3d471af022?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80"),
+        imgUrl: "assets/images/anies2.jpg"),
     YaoTerkini(
         category: "Teknologi",
         judul:
             "Perusahaan Bus Bijlmen menawarkan layanan dengan kualitas terbaik kepada pelanggan kami",
         time: "jam 10.00am",
-        imgUrl:
-            "https://images.unsplash.com/photo-1592898919095-e081b9689a09?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"),
+        imgUrl: "assets/images/anies3.jpg"),
     YaoTerkini(
         category: "Politik",
         judul: "The A - Z Of Politics",
         time: "jam 08.00am",
-        imgUrl:
-            "https://images.unsplash.com/photo-1554418651-70309daf95f5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"),
+        imgUrl: "assets/images/anies4.jpg"),
     YaoTerkini(
         category: "Hiburan",
         judul:
             "The Schola adalah orkestra kamar dari musisi paling terkenal di London.",
         time: "jam 07.00pm",
-        imgUrl:
-            "https://images.unsplash.com/photo-1567593810070-7a3d471af022?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80"),
+        imgUrl: "assets/images/anies5.jpg"),
     YaoTerkini(
         category: "Teknologi",
         judul:
@@ -91,7 +86,9 @@ class _YaoAllState extends State<YaoAll> {
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(10.0),
                           image: DecorationImage(
-                              image: NetworkImage(mypost.imgUrl.toString()),
+                              image: AssetImage(
+                                mypost.imgUrl.toString(),
+                              ),
                               fit: BoxFit.cover),
                         ),
                       ),

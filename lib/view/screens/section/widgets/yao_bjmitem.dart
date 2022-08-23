@@ -233,7 +233,7 @@ class _YaoBjmItemState extends State<YaoBjmItem> {
                           14.0,
                         ),
                         image: DecorationImage(
-                            image: NetworkImage(urlImage), fit: BoxFit.cover)),
+                            image: AssetImage(urlImage), fit: BoxFit.cover)),
                   ),
                 ),
                 Padding(
